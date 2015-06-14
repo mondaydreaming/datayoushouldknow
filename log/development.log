@@ -48,3 +48,9 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "categories" ("name", "successfully_funded", "less_than_thousand", "thousand_to_ten_thousand", "ten_thousand_to_twenty_thousand", "twenty_thousand_to_hundred_thousand", "hundred_thousand_to_million", "million", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["name", "music"], ["successfully_funded", 20251], ["less_than_thousand", 1960], ["thousand_to_ten_thousand", 14724], ["ten_thousand_to_twenty_thousand", 2536], ["twenty_thousand_to_hundred_thousand", 983], ["hundred_thousand_to_million", 47], ["million", 1], ["created_at", "2015-06-14 02:38:30.354577"], ["updated_at", "2015-06-14 02:38:30.354577"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
