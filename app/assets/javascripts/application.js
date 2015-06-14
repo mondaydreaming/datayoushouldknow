@@ -15,6 +15,6 @@
 //= require_tree ./lib
 //= require_tree ./models
 //= require_tree ./collections
-//= require_tress ./views
-//= require_tress ./router
+//= require_tree ./views
+//= require_tree ./router
 //= require_tree .
